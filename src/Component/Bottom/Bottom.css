@@ -1,0 +1,90 @@
+.buttom{
+    height: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.buttom-info{
+    height: 400px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+background:linear-gradient(to bottom,transparent,transparent,#039ec4) ;
+}
+.buttom-content{
+    height: 80%;
+    width: 90%;
+    display: flex;
+}
+.buttom-details{
+    height: 80%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    /* background-color: red; */
+}
+.buttom-details h1{
+    height: 100px;
+    width: 100%;
+    font-family: var(--name);
+    /* background-color: aliceblue; */
+}
+.buttom-details p{
+    height: 100px;
+    width: 100%;
+    /* background-color: aliceblue; */
+}
+.buttom-link{
+    height: 80%;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    /* background-color: aqua; */
+}
+
+.buttom-link-1{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: brown; */
+}
+.buttom-link-1 h1{
+    height: 50px;
+    width: 100%;
+color: aqua;
+}
+
+.buttom-link-1 ul{
+    height: 200px;
+    width: 100%;
+    display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+/* background-color: blue; */
+
+}
+.buttom-link-1 li{
+    width: 100%;
+    font-size: 17px;
+list-style: none;
+}
+.copy-right{
+    height: 20%;
+    width: 100%;
+    /* background-color: cadetblue; */
+border-top: 1px solid white;
+}
+.copy-right p{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: blueviolet; */
+}

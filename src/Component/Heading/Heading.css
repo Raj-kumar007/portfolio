@@ -1,0 +1,15 @@
+.heading{
+    height: 20%;
+width: 100%;
+/* background-color: black; */
+/* color: aqua; */
+}
+.heading h1{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: aqua;
+    align-items: center;
+font-size: 40px;
+}

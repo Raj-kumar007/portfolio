@@ -1,0 +1,20 @@
+.portfolio{
+    height:auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: aquamarine; */
+}
+.portfolio-content{
+    height: auto;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3,30%);
+grid-row-gap: 50px;
+    justify-content:space-between;
+    align-items: center;
+    margin-top: 50px;
+    /* background-color: brown; */
+}
