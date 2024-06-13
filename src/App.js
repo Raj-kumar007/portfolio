@@ -8,8 +8,12 @@ import Slider from './Component/Slider/Slider.jsx';
 import Service from './Component/Services/Service.jsx';
 import Port from './Component/Portfolio/Port.jsx';
 import Contact from './Component/Contact/Contact.jsx';
+import { useEffect } from'react';
 
 function App() {
+  useEffect(() => {
+    document.title = My-Portfolio; // Set the new title when the component mounts or when newTitle changes
+  }, [App]);
   return (
     <div className="App">
  <Navbar/>
