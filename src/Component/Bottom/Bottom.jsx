@@ -1,9 +1,9 @@
 import React from 'react'
 import'./Bottom.css'
-const Bottom = () => {
+const Bottom = (props) => {
   return (
     <>
-       <div className="buttom">
+       <div className="buttom" ref={props.myref}>
         <div className="buttom-info">
             <div className="buttom-content">
             <div className="buttom-details">

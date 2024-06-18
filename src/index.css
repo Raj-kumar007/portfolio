@@ -9,6 +9,7 @@ body {
   background-color: #100028;
   overflow-x: hidden;
   color: white;
+  scroll-behavior: smooth;
 }
 :root{
   --nav-heading: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial,"Tilt Neon" ,sans-serif;

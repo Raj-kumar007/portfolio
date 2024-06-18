@@ -9,7 +9,7 @@ import { FaCode } from "react-icons/fa";
 import { FaMobileAlt } from "react-icons/fa";
 import { FaPalette } from "react-icons/fa";
 
-const Service = () => {
+const Service = (props) => {
   const [close,open]=useState()
 const element = useRef(null)
 useEffect(()=>{
@@ -32,11 +32,11 @@ useEffect(()=>{
 })
 
   return (
-    <>
+    <div ref={props.myref}>
         <div className="service" ref={element}>
         
         <div className="service-circle"></div>
-        <div className="service-top">
+        <div className="service-top" >
           <Heading
             title="SERVICE" />
           <div className="service-content" >
@@ -99,7 +99,7 @@ useEffect(()=>{
         </div>
 
       </div>
-    </>
+    </div>
   )
 }
 

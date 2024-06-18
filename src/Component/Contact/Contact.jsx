@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import './Contact.css'
 import Heading from '../Heading/Heading'
-const Contact = () => {
+const Contact = (props) => {
     const[left, right] =useState(null)
     const contactElement = useRef(null)
     useEffect(() => {
@@ -25,7 +25,7 @@ const Contact = () => {
                     <Heading
                         title="CONTACT" />
                 </div>
-                <div className="contact-info">
+                <div className="contact-info" ref={props.myref}>
                     <div className="contact-detail">
                         <div className= {`contact-form ${(left)? "right":""}`}>
                             <h1>Get in Touch</h1>

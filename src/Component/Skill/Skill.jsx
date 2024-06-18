@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import'./SAkill.css'
-const Skill = () => {
+const Skill = (props) => {
 const [rect,setrect]=useState(null)
 const skillrect=useRef(null)
 useEffect(()=>{
@@ -22,7 +22,7 @@ useEffect(()=>{
   return (
     <>
        <div className="course"ref={skillrect}>
-        <div className="skill"  >
+        <div className="skill" ref={props.myref} >
           <h2>MY SKILL</h2>
           <div className="know">
             <div className="content">

@@ -1,9 +1,9 @@
 import React from 'react'
 import './Slider.css'
-const Slider = () => {
+const Slider = (props) => {
   return (
     <>
-     <div className="slider">
+     <div className="slider" ref={props.ref}>
         <h1>Education</h1>
         <div className="degree-hold">
 
