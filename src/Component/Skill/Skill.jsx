@@ -6,7 +6,7 @@ const skillrect=useRef(null)
 useEffect(()=>{
   function slider(params) {
     const rect = skillrect.current.getBoundingClientRect()
-    console.log(rect.top);
+    // console.log(rect.top);
   
    if (rect.top<100) {
       setrect(true)

@@ -21,6 +21,15 @@ function scrollbar(params) {
     setactive(false)
   }
 }
+function menuactive() {
+  const active = document.querySelectorAll('.nav-menu li');
+
+  active.forEach((element) => {
+    element.classList.add('n-active');
+    console.log(element.classList);
+  });
+}
+
 
 
 const aboutRef =useRef()
@@ -47,12 +56,12 @@ window.addEventListener('scroll', scrollbar)
           <div className={`navbar ${(active) ? "navactive":""}`}>
             <h1>Raj Kumar</h1>
             <ul className='nav-menu'>
-              <li onClick={ ()=> navscroll(homeRef)}>HOME</li>
-              <li onClick={ ()=> navscroll(aboutRef)}>ABOUT</li>             
-               <li onClick={ ()=>navscroll (skillRef)}>SKILLS</li>
-              <li onClick={ ()=> navscroll(serviceRef)} >SERVICES</li>
-              <li onClick={ ()=>navscroll(portRef)}>PORTFOLIO</li>
-              <li onClick={ ()=> navscroll(contactRef)}>CONTACT</li>
+              <li onClick={ ()=> {navscroll(homeRef);menuactive()}}>HOME</li>
+              <li onClick={ ()=> {navscroll(aboutRef);menuactive()}}>ABOUT</li>             
+               <li onClick={ ()=>{navscroll (skillRef);menuactive()}}>SKILLS</li>
+              <li onClick={ ()=>{ navscroll(serviceRef);menuactive()}} >SERVICES</li>
+              <li onClick={ ()=>{navscroll(portRef);menuactive()}}>PORTFOLIO</li>
+              <li onClick={ ()=>{ navscroll(contactRef);menuactive()}}>CONTACT</li>
             </ul>
           </div>
           <div className="round"></div>

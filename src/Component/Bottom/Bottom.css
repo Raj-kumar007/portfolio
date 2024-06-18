@@ -44,6 +44,7 @@ background:linear-gradient(to bottom,transparent,transparent,#039ec4) ;
     width: 60%;
     display: flex;
     justify-content: center;
+font-family: var(--nav-heading);
     /* background-color: aqua; */
 }
 

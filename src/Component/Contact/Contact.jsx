@@ -7,7 +7,7 @@ const Contact = (props) => {
     useEffect(() => {
         function side(params) {
             const contact = contactElement.current.getBoundingClientRect()
-            console.log(contact);
+            // console.log(contact);
             if (contact.top<100) {
                 right(true)
             } else if (contact.top>400) {

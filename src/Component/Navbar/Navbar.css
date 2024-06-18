@@ -1,6 +1,9 @@
 a{
     text-decoration: none;
 }
+.n-active {
+    color: red; 
+  }
 .top{
     height: 600px;
     width: 100%;
@@ -74,7 +77,9 @@ color: #8ebcce;
 margin-left: 1px;
 /* background-color: red; */
 }
-
+.nav-menu li:hover{
+    color: white;
+}
 .round{
     height: 30px;
     width: 30px;

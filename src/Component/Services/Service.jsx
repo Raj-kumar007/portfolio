@@ -16,10 +16,10 @@ useEffect(()=>{
   function port(params) {
    
   const head = element.current.getBoundingClientRect()
-  console.log(head);
+  // console.log(head);
  
 
-  if (head.top<0) {
+  if (head.top<100) {
     open(true)
   } else if (head.top>300) {
     open(false)
