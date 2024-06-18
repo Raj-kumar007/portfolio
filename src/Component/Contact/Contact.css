@@ -107,6 +107,7 @@
     z-index: 3;
     display: grid;
     place-items: center;
+    font-family: var(--top);
 }
 
 .send::before {

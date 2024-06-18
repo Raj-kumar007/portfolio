@@ -25,6 +25,7 @@ background:linear-gradient(to bottom,transparent,transparent,#039ec4) ;
     width: 30%;
     display: flex;
     flex-direction: column;
+    text-align: left;
     /* background-color: red; */
 }
 .buttom-details h1{
@@ -58,6 +59,7 @@ background:linear-gradient(to bottom,transparent,transparent,#039ec4) ;
     height: 50px;
     width: 100%;
 color: aqua;
+text-align: left;
 }
 
 .buttom-link-1 ul{
@@ -73,6 +75,7 @@ justify-content: space-evenly;
     width: 100%;
     font-size: 17px;
 list-style: none;
+text-align: left;
 }
 .copy-right{
     height: 20%;
