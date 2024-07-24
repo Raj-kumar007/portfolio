@@ -34,7 +34,8 @@ const Bottom = (props) => {
                 <div className="buttom-link-1">
                     <h1>Address</h1>
                     <ul className='course'>
-                    <li>Sivakasi</li>
+                        <a href="https://www.google.co.in/maps/place/9%C2%B026'04.0%22N+77%C2%B048'11.0%22E/@9.4334137,77.8039775,710m/data=!3m1!1e3!4m4!3m3!8m2!3d9.434446!4d77.803064?entry=ttu" target='blank'><li>Sivakasi</li></a>
+                    
                     <a href="mailTo:parajkumar184@gmail"><li>parajkumar184@gmail.com</li></a>
                     <a href="https://wa.me/917092074389" target='blank'><li>+91 7092074389</li></a>
                     </ul>
