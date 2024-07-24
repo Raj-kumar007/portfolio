@@ -8,7 +8,7 @@ const Contact = (props) => {
         function side(params) {
             const contact = contactElement.current.getBoundingClientRect()
             // console.log(contact);
-            if (contact.top<100) {
+            if (contact.top<50) {
                 right(true)
             } else if (contact.top>400) {
                 right(false)
@@ -18,10 +18,13 @@ const Contact = (props) => {
         }
         window.addEventListener('scroll', side)
     },[])
+
+
+
   return (
     <>
        <div className="contact" ref={contactElement}>
-                <div className="contact-header">
+                <div className="contact-header" ref={ props.myref}>
                     <Heading
                         title="CONTACT" />
                 </div>
@@ -29,11 +32,15 @@ const Contact = (props) => {
                     <div className="contact-detail">
                         <div className= {`contact-form ${(left)? "right":""}`}>
                             <h1>Get in Touch</h1>
-                            <input className='box' type="text" placeholder="Name" />
-                            <input className='box' type="text" placeholder="Email" />
-                            <input className='box' type="text" placeholder="Subject" />
-                            <input className='message' type="text" placeholder="Message" />
-                            <div className='send'>SEND MESSAGE</div>
+                          <form >
+                          <input className='box' type="text" placeholder="Name" name='user_name' />
+                            <input className='box' type="text" placeholder="Email" name='user_mail'/>
+                            <input className='box' type="text" placeholder="Subject" name='user_subject' />
+                            <input className='message' type="text" placeholder="Message" name='user_message' />
+
+                          </form>
+                            <button  className='send'>SEND MESSAGE</button>
+
                         </div>
                         <div className={`map ${(left)? "left":""}`}>
                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39133.44957535089!2d77.82638130473406!3d9.450150513523917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b00cfddd9de9027%3A0x9191ab3ded5510cb!2sYokohama%20Club%20Network%20-%20Madurai%20Sundar%20Tyres%20Pvt%20Ltd!5e0!3m2!1sen!2sin!4v1717225389080!5m2!1sen!2sin" width="600" height="450" style={{border:0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>

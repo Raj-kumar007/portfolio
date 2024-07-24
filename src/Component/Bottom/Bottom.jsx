@@ -35,8 +35,8 @@ const Bottom = (props) => {
                     <h1>Address</h1>
                     <ul className='course'>
                     <li>Sivakasi</li>
-                    <li>parajkumar184@gmail.com</li>
-                    <li>+91 7092074389</li>
+                    <a href="mailTo:parajkumar184@gmail"><li>parajkumar184@gmail.com</li></a>
+                    <a href="https://wa.me/917092074389" target='blank'><li>+91 7092074389</li></a>
                     </ul>
                 </div>
             </div>

@@ -59,7 +59,14 @@
     transform: translateX(0%);
     opacity: 1;
 }
-
+form{
+    height: 90%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: left;
+}
 
 .contact-form h1 {
     height: 50px;
@@ -102,6 +109,7 @@
     color: white;
     font-weight: 700;
     background-color: aqua;
+    border-radius: 10px;
     position: relative;
     overflow: hidden;
     z-index: 3;
@@ -152,3 +160,346 @@
     opacity: 1;
 }
 
+
+@media (max-width: 1200px) {
+    .contact {
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        border-bottom: 1px solid white;
+    }
+    
+    .contact-header {
+        height: 150px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* background-color: brown; */
+    }
+    
+    .contact-info {
+        height: 750px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: url(../../Assets/Images/contact-background.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    
+    .contact-detail {
+        height: 90%;
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #1a1a1c7e;
+        backdrop-filter: blur(10px);
+        border-radius: 10px;
+        overflow: hidden;
+    
+    }
+    
+    .contact-form {
+        height: 600px;
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        transition: 0.5s;
+        opacity: 0;
+        transform: translateX(-100%);
+        /* background-color: red; */
+    }
+    
+    .right {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+    
+    form{
+        height: 90%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: left;
+    }
+    
+    .contact-form h1 {
+        height: 50px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .box {
+        height: 50px;
+        width: 90%;
+        background-color: transparent;
+        border: 1px solid aqua;
+        padding-left: 20px;
+        position: relative;
+    
+    }
+    
+    .box::before {
+        content: "";
+        height: 50px;
+        width: 90%;
+        border: 3px solid aqua;
+        position: absolute;
+    }
+    
+    .message {
+        height: 120px;
+        width: 90%;
+        background-color: transparent;
+        border: 1px solid aqua;
+        padding-left: 20px;
+    }
+    
+    .send {
+        height: 50px;
+        width: 220px;
+        font-size: 20px;
+        color: white;
+        font-weight: 700;
+        background-color: aqua;
+        border-radius: 10px;
+        position: relative;
+        overflow: hidden;
+        z-index: 3;
+        display: grid;
+        place-items: center;
+        font-family: var(--top);
+    }
+    
+    .send::before {
+        content: "";
+        height: 30px;
+        width: 100px;
+        background-color: blue;
+        filter: blur(20px);
+        position: absolute;
+        top: 50%;
+        left: 0%;
+        transform: translate(0%, -50%);
+        z-index: -1;
+        transition: transform 0.5s, width 0.3s;
+    
+    }
+    
+    .send:hover::before {
+        transform: translateX(70%) translateY(-50%);
+        width: 200px;
+    
+    }
+    
+    .map {
+        height: 450px;
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        transition: 0.5s;
+        opacity: 0;
+        transform: translateX(100%);
+        /* background-color: blueviolet; */
+    }
+    
+    .map iframe {
+        height: 100%;
+        width: 100%;
+    }
+    
+    .left {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+    
+    
+}
+@media (max-width: 600px) {
+    .contact {
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        border-bottom: 1px solid white;
+    }
+    
+    .contact-header {
+        height: 150px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* background-color: brown; */
+    }
+    
+    .contact-info {
+        height: 1000px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: url(../../Assets/Images/contact-background.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    
+    .contact-detail {
+        height: 90%;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        background-color: #1a1a1c7e;
+        backdrop-filter: blur(10px);
+        border-radius: 10px;
+        overflow: hidden;
+    
+    }
+    
+    .contact-form {
+        height: 600px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        transition: 0.5s;
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    form{
+        height: 90%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    
+    .right {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+    
+    
+    .contact-form h1 {
+        height: 50px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    form{
+        height: 90%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    .box {
+        height: 50px;
+        width: 90%;
+        background-color: transparent;
+        border: 1px solid aqua;
+        padding-left: 20px;
+        position: relative;
+        
+    
+    }
+    
+    .box::before {
+        content: "";
+        height: 50px;
+        width: 90%;
+        border: 3px solid aqua;
+        position: absolute;
+    }
+    
+    .message {
+        height: 120px;
+        width: 90%;
+        background-color: transparent;
+        border: 1px solid aqua;
+        padding-left: 20px;
+    }
+    
+    .send {
+        height: 50px;
+        width: 220px;
+        font-size: 20px;
+        color: white;
+        font-weight: 700;
+        background-color: aqua;
+        border-radius: 10px;
+        position: relative;
+        overflow: hidden;
+        z-index: 3;
+        display: grid;
+        place-items: center;
+        font-family: var(--top);
+    }
+    
+    .send::before {
+        content: "";
+        height: 30px;
+        width: 100px;
+        background-color: blue;
+        filter: blur(20px);
+        position: absolute;
+        top: 50%;
+        left: 0%;
+        transform: translate(0%, -50%);
+        z-index: -1;
+        transition: transform 0.5s, width 0.3s;
+    
+    }
+    
+    .send:hover::before {
+        transform: translateX(70%) translateY(-50%);
+        width: 200px;
+    
+    }
+    
+    .map {
+        height: 450px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        transition: 0.5s;
+        opacity: 0;
+        transform: translateX(100%);
+        /* background-color: blueviolet; */
+    }
+    
+    .map iframe {
+        height: 100%;
+        width: 100%;
+    }
+    
+    .left {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+    
+    
+}

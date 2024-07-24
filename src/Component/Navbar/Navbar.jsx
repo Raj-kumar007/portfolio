@@ -7,28 +7,30 @@ import Service from '../../Component/Services/Service.jsx';
 import Port from '../../Component/Portfolio/Port.jsx';
 import Contact from '../../Component/Contact/Contact.jsx';
 import Bottom from'../../Component/Bottom/Bottom.jsx';
-
+import { HiMiniBars3BottomRight } from "react-icons/hi2";
+import { IoClose } from "react-icons/io5";
+import resume from '../../Assets/Images/Resume (1).pdf'
 
 import './Navbar.css'
 
 const Navbar = () => {
 const [active,setactive] =useState(false)
+const[sideOpen,sideClose] = useState(false)
+const [sideIcon,sideCloseIcon]= useState(true)
+
+function sideToggle(params) {
+  sideClose(!sideOpen)
+  sideCloseIcon(!sideIcon)
+}
 function scrollbar(params) {
-  if (window.scrollY>20) {
+  if (window.scrollY>10) {
     setactive(true)
-    // console.log(window.scrollY);
   } else {
     setactive(false)
   }
 }
-function menuactive() {
-  const active = document.querySelectorAll('.nav-menu li');
 
-  active.forEach((element) => {
-    element.classList.add('n-active');
-    console.log(element.classList);
-  });
-}
+
 
 
 
@@ -54,14 +56,20 @@ window.addEventListener('scroll', scrollbar)
       <div className="top" >
         <div className="main">
           <div className={`navbar ${(active) ? "navactive":""}`}>
+            <div className='side-name'>
             <h1>Raj Kumar</h1>
-            <ul className='nav-menu'>
-              <li onClick={ ()=> {navscroll(homeRef);menuactive()}}>HOME</li>
-              <li onClick={ ()=> {navscroll(aboutRef);menuactive()}}>ABOUT</li>             
-               <li onClick={ ()=>{navscroll (skillRef);menuactive()}}>SKILLS</li>
-              <li onClick={ ()=>{ navscroll(serviceRef);menuactive()}} >SERVICES</li>
-              <li onClick={ ()=>{navscroll(portRef);menuactive()}}>PORTFOLIO</li>
-              <li onClick={ ()=>{ navscroll(contactRef);menuactive()}}>CONTACT</li>
+            <div className='side-menu' onClick={sideToggle} style={{ fontSize: '24px', cursor: 'pointer' }}>
+      {sideIcon ? <HiMiniBars3BottomRight /> : <IoClose />}
+    </div>
+            </div>
+
+            <ul className= {`nav-menu ${(sideOpen)?"side-open":""}`} >
+              <li onClick={ ()=> {navscroll(homeRef)}}>HOME</li>
+              <li onClick={ ()=> {navscroll(aboutRef)}}>ABOUT</li>             
+               <li onClick={ ()=>{navscroll (skillRef)}}>SKILLS</li>
+              <li onClick={ ()=>{ navscroll(serviceRef)}} >SERVICES</li>
+              <li onClick={ ()=>{navscroll(portRef)}}>PORTFOLIO</li>
+              <li onClick={ ()=>{ navscroll(contactRef)}}>CONTACT</li>
             </ul>
           </div>
           <div className="round"></div>
@@ -74,7 +82,7 @@ window.addEventListener('scroll', scrollbar)
              <li><span>Web Design</span></li>
               </div>
            
-              <div className='send'>DOWNLOAD CV</div>
+              <a href={resume} download= "my_resume.pdf"className='send'>DOWNLOAD CV</a>
 
             </div>
 

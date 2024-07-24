@@ -9,9 +9,12 @@ import { FaCode } from "react-icons/fa";
 import { FaMobileAlt } from "react-icons/fa";
 import { FaPalette } from "react-icons/fa";
 
+
 const Service = (props) => {
   const [close,open]=useState()
 const element = useRef(null)
+const contactRef =useRef()
+
 useEffect(()=>{
   function port(params) {
    
@@ -30,6 +33,10 @@ useEffect(()=>{
 
 
 })
+function navscroll(getmyref) {
+
+
+}
 
   return (
     <div ref={props.myref}>
@@ -92,14 +99,16 @@ useEffect(()=>{
             <div className= "p-content">
               <h1 >Have a Project?</h1>
               <p >Clients satisfaction is my first priority and it will be always. I am available 24/7 you can contact me anytime</p>
-              <div className='send' >Contact Me</div>
+              <div onClick={ ()=>{ navscroll(contactRef)}} className='send' >Contact Me</div>
             </div>
 
           </div>
         </div>
 
       </div>
+
     </div>
+    
   )
 }
 

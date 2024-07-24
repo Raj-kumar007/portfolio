@@ -3,7 +3,7 @@ import './Slider.css'
 const Slider = (props) => {
   return (
     <>
-     <div className="slider" ref={props.ref}>
+      <div className="slider" ref={props.ref}>
         <h1>Education</h1>
         <div className="degree-hold">
 
@@ -18,12 +18,9 @@ const Slider = (props) => {
               <span>+2 - N.P.S.S.R.K.ROTART.MATRIC.HR.SEC.SCHOOL</span>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse cumque fuga aspernatur similique quisquam aliquam, impedit perferendis consectetur repudiandae sit atque itaque explicabo hic architecto assumenda illum. Praesentium, voluptas illum?</p>
             </div>
-            
+
           </div>
-          <div className="line">
-        
-          </div>
-          
+
           <div className="degree event-scroll">
             <div className="qualifaction scroll">
               <h4>2020-2023</h4>
@@ -35,12 +32,15 @@ const Slider = (props) => {
               <span>+1 - N.P.S.S.R.K.ROTART.MATRIC.HR.SEC.SCHOOL</span>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse cumque fuga aspernatur similique quisquam aliquam, impedit perferendis consectetur repudiandae sit atque itaque explicabo hic architecto assumenda illum. Praesentium, voluptas illum?</p>
             </div>
-         
+
 
           </div>
+          <div className="line"></div>
+
         </div>
 
-      </div> 
+
+      </div>
     </>
   )
 }
