@@ -9,7 +9,7 @@ import Contact from '../../Component/Contact/Contact.jsx';
 import Bottom from'../../Component/Bottom/Bottom.jsx';
 import { HiMiniBars3BottomRight } from "react-icons/hi2";
 import { IoClose } from "react-icons/io5";
-import resume from '../../Assets/Images/Resume (1).pdf'
+import resume from '../../Assets//Images/resume.pdf'
 
 import './Navbar.css'
 
