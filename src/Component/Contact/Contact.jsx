@@ -24,11 +24,11 @@ const Contact = (props) => {
   return (
     <>
        <div className="contact" ref={contactElement}>
-                <div className="contact-header" ref={ props.myref}>
+                <div className="contact-header" ref={props.contactRef}>
                     <Heading
                         title="CONTACT" />
                 </div>
-                <div className="contact-info" ref={props.myref}>
+                <div className="contact-info" ref={props.contactRef}>
                     <div className="contact-detail">
                         <div className= {`contact-form ${(left)? "right":""}`}>
                             <h1>Get in Touch</h1>

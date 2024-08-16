@@ -1,19 +1,13 @@
-import React, { useRef, useState } from 'react'
+import  { useState } from 'react'
 import mypic from '../../Assets/Images/profile-1.jpg'
-import Skill from '../../Component/Skill/Skill.jsx';
-import About from '../../Component/About/About.jsx';
-import Slider from '../../Component/Slider/Slider.jsx';
-import Service from '../../Component/Services/Service.jsx';
-import Port from '../../Component/Portfolio/Port.jsx';
-import Contact from '../../Component/Contact/Contact.jsx';
-import Bottom from'../../Component/Bottom/Bottom.jsx';
+
 import { HiMiniBars3BottomRight } from "react-icons/hi2";
 import { IoClose } from "react-icons/io5";
 import resume from '../../Assets//Images/resume.pdf'
 
 import './Navbar.css'
 
-const Navbar = () => {
+const Navbar = ({homeRef,aboutRef,serviceRef,skillRef,contactRef,portRef,navscroll}) => {
 const [active,setactive] =useState(false)
 const[sideOpen,sideClose] = useState(false)
 const [sideIcon,sideCloseIcon]= useState(true)
@@ -34,21 +28,8 @@ function scrollbar(params) {
 
 
 
-const aboutRef =useRef()
-const homeRef =useRef()
-const skillRef =useRef()
-const serviceRef =useRef()
-const sliderRef =useRef()
-const portRef =useRef()
-const contactRef =useRef()
-const bottomRef =useRef()
-function navscroll(getmyref) {
-  console.log(getmyref.current);
-  window.scrollTo({
-      top:getmyref.current.offsetTop -50,
-      behavior:"smooth"
-  })
-}
+
+
 
 window.addEventListener('scroll', scrollbar)
   return (
@@ -96,13 +77,6 @@ window.addEventListener('scroll', scrollbar)
 
         </div>
       </div>
-      <About myref={aboutRef} />
- <Slider myref={sliderRef}/>
- <Skill myref={skillRef}/>
- <Service myref={serviceRef}/>
- <Port myref={portRef}/>
- <Contact myref={contactRef}/>
-<Bottom myref={bottomRef}/>
     </>
   )
 }

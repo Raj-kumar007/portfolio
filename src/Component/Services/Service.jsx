@@ -10,10 +10,9 @@ import { FaMobileAlt } from "react-icons/fa";
 import { FaPalette } from "react-icons/fa";
 
 
-const Service = (props) => {
+const Service = ({serviceRef,contactRef,navscroll}) => {
   const [close,open]=useState()
 const element = useRef(null)
-const contactRef =useRef()
 
 useEffect(()=>{
   function port(params) {
@@ -33,13 +32,10 @@ useEffect(()=>{
 
 
 })
-function navscroll(getmyref) {
 
-
-}
 
   return (
-    <div ref={props.myref}>
+    <div ref={serviceRef}>
         <div className="service" ref={element}>
         
         <div className="service-circle"></div>
@@ -99,7 +95,7 @@ function navscroll(getmyref) {
             <div className= "p-content">
               <h1 >Have a Project?</h1>
               <p >Clients satisfaction is my first priority and it will be always. I am available 24/7 you can contact me anytime</p>
-              <div onClick={ ()=>{ navscroll(contactRef)}} className='send' >Contact Me</div>
+              <div className='send'onClick={ ()=>{ navscroll(contactRef)}}>Contact Me</div>
             </div>
 
           </div>

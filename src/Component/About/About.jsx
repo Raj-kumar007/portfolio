@@ -2,11 +2,11 @@ import React from 'react'
 
 import'./About.css'
 import mypic from '../../Assets/Images/profile-2.jpg'
-const About = (props) => {
+const About = ({aboutRef}) => {
 
     return (
     <>
-        <div className="about" ref={props.myref} >
+        <div className="about" ref={aboutRef} >
                 
                 <div className="about-img">
                     <img src={mypic} alt="" />

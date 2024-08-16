@@ -7,12 +7,12 @@ import img_5 from '../../Assets/Images/pic_5.png'
 import img_6 from '../../Assets/Images/pic_6.png'
 import Heading from '../Heading/Heading'
 import Blog from '../Reuse/Blog/Blog'
-const Port = (props)  => {
+const Port = ({portRef})  => {
 
 
   return (
     <>
-       <div className="portfolio" ref={props.myref} >
+       <div className="portfolio" ref={portRef} >
      <Heading
      title="PORTFOLIO"/> 
      <div className="portfolio-content">

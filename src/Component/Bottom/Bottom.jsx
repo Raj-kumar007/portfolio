@@ -1,9 +1,9 @@
 import React from 'react'
 import'./Bottom.css'
-const Bottom = (props) => {
+const Bottom = ({homeRef,aboutRef,serviceRef,skillRef,contactRef,portRef,navscroll}) => {
   return (
     <>
-       <div className="buttom" ref={props.myref}>
+       <div className="buttom" >
         <div className="buttom-info">
             <div className="buttom-content">
             <div className="buttom-details">
@@ -14,12 +14,12 @@ const Bottom = (props) => {
                 <div className="buttom-link-1">
                     <h1>Links</h1>
                     <ul>
-                        <li>Home</li>
-                        <li>About</li>
-                        <li>Skills</li>
-                        <li>Portfolio</li>
-                        <li>Services</li>
-                        <li>Contact</li>
+                    <li onClick={ ()=> {navscroll(homeRef)}}>HOME</li>
+              <li onClick={ ()=> {navscroll(aboutRef)}}>ABOUT</li>             
+               <li onClick={ ()=>{navscroll (skillRef)}}>SKILLS</li>
+              <li onClick={ ()=>{ navscroll(serviceRef)}} >SERVICES</li>
+              <li onClick={ ()=>{navscroll(portRef)}}>PORTFOLIO</li>
+              <li onClick={ ()=>{ navscroll(contactRef)}}>CONTACT</li>
                     </ul>
                 </div>
                 <div className="buttom-link-1">
